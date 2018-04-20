@@ -73,7 +73,7 @@ function salepoint() {
                         var orderquery = " update products set stock_quantity =" + (availableq - frmuserqu) + " where product_name = '" + frmuseritm + "';"
                         connection.query(orderquery, (error, response) => {
                             if (error) throw error
-                            console.log("Your Order Submeted")
+                            console.log("Your Order Submitted")
                             console.log("The Total Price is: " + unitprice * frmuserqu + " $")
 
                         })
